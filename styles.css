@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4e1e1; /* Fondo rosado elegante */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos generales del header */
+/* Estilos generales del header */
+header {
+    background-color: rgba(255, 105, 180, 0.8); /* Fondo rosado translúcido */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo del título */
+header h1 {
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'Playfair Display', serif; /* Fuente elegante */
+    margin: 0;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: scale(1.1); /* Efecto al pasar el cursor */
+}
+
+/* Estilo de la navegación */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff69b4; /* Cambia el color de fondo al pasar el cursor */
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+}
+
+/* Estilos para el botón del menú en móviles */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+
+/* Menú Responsivo: se oculta en mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: rgba(255, 105, 180, 0.95);
+        width: 100%;
+        padding: 20px;
+        display: none; /* Oculta el menú en mobile por defecto */
+    }
+
+    /* Muestra el botón del menú hamburguesa en pantallas pequeñas */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Si el menú está activo (cuando se hace clic en el botón hamburguesa), se muestra */
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+}
+
+
+#hero {
+    background: url('') no-repeat center center/cover; /* Cambia por la URL de tu imagen */
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro transparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cta-button {
+    background-color: #ffcccb; /* Botón suave */
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff69b4; /* Cambia color al pasar el ratón */
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%; /* Ajustar el ancho según el espacio disponible */
+    transition: transform 0.3s;
+}
+
+.service-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* Efecto de desplazamiento al pasar el ratón */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: #ff69b4; /* Pie de página rosa vibrante */
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+/* Estilo para la sección Hero */
+#hero {
+    position: relative;
+    background: url('img/degrade.jpg') no-repeat center center/cover; /* Fondo de imagen */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Superposición de color en el fondo */
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Añade un gradiente oscuro para mejorar la legibilidad */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté encima de la superposición */
+    max-width: 700px;
+    padding: 20px;
+}
+
+/* Estilo del título */
+.hero-content h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    animation: fadeInUp 1s ease-in-out; /* Animación de aparición */
+}
+
+/* Estilo del párrafo */
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    animation: fadeInUp 1.5s ease-in-out; /* Animación con retardo */
+}
+
+/* Estilo del botón de llamada a la acción */
+.cta-button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    animation: fadeInUp 2s ease-in-out; /* Animación con mayor retardo */
+}
+
+.cta-button:hover {
+    background-color: #ff85c4;
+    transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
