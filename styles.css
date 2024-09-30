@@ -14,7 +14,7 @@ body {
 /* Estilos generales del header */
 /* Estilos generales del header */
 header {
-    background-color: rgba(255, 105, 180, 0.8); /* Fondo rosado translúcido */
+    background-color: rgba(245, 165, 205, 0.8); /* Fondo rosado translúcido */
     padding: 20px 0;
     position: fixed;
     width: 100%;
@@ -180,7 +180,7 @@ form input {
 }
 
 footer {
-    background-color: #ff69b4; /* Pie de página rosa vibrante */
+    background-color: rgba(245, 165, 205, 0.8); /* Pie de página rosa vibrante */
     padding: 10px 0;
     text-align: center;
     color: white;
@@ -263,6 +263,74 @@ footer {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+
+}
+
+/* Estilo general de la sección de testimonios */
+#testimonios {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#testimonios h3 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+}
+
+/* Contenedor de testimonios */
+.testimonios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Cada testimonio en formato de tarjeta */
+.testimonio {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonio:hover {
+    transform: translateY(-10px); /* Efecto de elevarse al pasar el cursor */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo del bloque de citas */
+blockquote {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #555;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+blockquote p {
+    margin-bottom: 15px;
+}
+
+/* Estilo del autor de la cita */
+cite {
+    display: block;
+    font-size: 1rem;
+    color: #ff69b4;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .testimonios-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
