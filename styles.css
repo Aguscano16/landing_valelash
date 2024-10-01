@@ -205,7 +205,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.4); /* Añade un gradiente oscuro para mejorar la legibilidad */
+    background: rgba(234, 99, 209, 0.4); /* Añade un gradiente oscuro para mejorar la legibilidad */
     z-index: 1;
 }
 
@@ -481,88 +481,6 @@ footer p {
     }
 }
 
-/* Estilo general para la sección de servicios */
-#servicios {
-    background-color: #fafafa;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-#servicios h3 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-family: 'Playfair Display', serif;
-    color: #333;
-}
-
-#servicios .intro-text {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 40px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-/* Contenedor de servicios */
-.service-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-/* Estilo de cada servicio */
-.service-item {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 300px;
-    text-align: center;
-}
-
-.service-item img {
-    width: 100%;
-    height: auto;
-    border-bottom: 5px solid #ff69b4;
-}
-
-.service-item h4 {
-    font-size: 1.5rem;
-    margin-top: 15px;
-    font-family: 'Open Sans', sans-serif;
-    color: #333;
-}
-
-.service-item p {
-    font-size: 1rem;
-    color: #777;
-    margin: 10px 20px;
-}
-
-/* Animaciones al pasar el cursor */
-.service-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.service-item:hover img {
-    opacity: 0.9;
-    transition: opacity 0.3s ease;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-    .service-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service-item {
-        width: 100%;
-        max-width: 400px;
-    }
-}
 
 
 
